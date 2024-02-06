@@ -2,7 +2,7 @@ const express = require('express')
 const nodemailer = require('nodemailer')
 const router = express.Router()
 
-router.post("/sendMail", (req, res) => {
+router.post("/sendMail", (req, res) => {  // contact Form
     const rubrique = req.body.rubrique
     const { name, email, phone, message} = req.body
     let know
@@ -23,15 +23,15 @@ know = "Full name : " + name + "\n" + "Email : " + email + "\n" + "Phone : " + p
 const mailOptions = {
     from: 'simbingangu@gmail.com',
     to: email,
-    subject: 'MZH<notification>',
-    text: 'Thank you for sending us your message, our team we\'ll get back to you. \nBest regard Mountain of zion hospitality'
+    subject: 'AZIZA <NOTIFICATION>',
+    text: 'Thank you for sending us your message, our team we\'ll get back to you. \nBest regard AZIZA'
 
 }
 
-const mailOptions2 = {
+const mailOptions2 = {  // Main Form
     from: 'simbingangu@gmail.com',
     to: 'simbingangu@gmail.com',
-    subject: 'MZH<acknowledgement of receipt>',
+    subject: 'AZIZA <ACKNOWLEDGEMENT OF RECEIPT>',
     text: know
 }
 
@@ -39,7 +39,7 @@ transporter.sendMail(mailOptions, (error, info) => {
     if (error){
         console.log(error)
     } else {
-        console.log('you win nice')
+        console.log('Massage sent successful !!!')
     }
 })
 
@@ -47,7 +47,7 @@ transporter.sendMail(mailOptions2, (error, info) => {
     if (error){
         console.log(error)
     } else {
-        console.log('you win nice')
+        console.log('Massage sent successful !!!')
     }
 })
 
@@ -76,15 +76,15 @@ know = "Name : " + name + "\n" + "Email : " + email + "\n" + "Job : " + job + "\
 const mailOptions = {
     from: 'simbingangu@gmail.com',
     to: email,
-    subject: 'MZH<notification>',
-    text: 'Thank you for sending us your message, our team we\'ll get back to you. \nBest regard Mountain of zion hospitality'
+    subject: 'AZIZA <NOTIFICATION>',
+    text: 'Thank you for sending us your message, our team we\'ll get back to you. \nBest regard AZIZA'
 
 }
 
 const mailOptions2 = {
     from: 'simbingangu@gmail.com',
     to: 'simbingangu@gmail.com',
-    subject: 'MZH<acknowledgement of receipt>',
+    subject: 'AZIZA <ACKNOWLEDGEMENT OF RECEIPT',
     text: know
 }
 
@@ -92,7 +92,7 @@ transporter.sendMail(mailOptions, (error, info) => {
     if (error){
         console.log(error)
     } else {
-        console.log('you win nice')
+        console.log('Massage sent successful !!!')
     }
 })
 
@@ -100,7 +100,7 @@ transporter.sendMail(mailOptions2, (error, info) => {
     if (error){
         console.log(error)
     } else {
-        console.log('you win nice')
+        console.log('Massage sent successful !!!')
     }
 })
 
