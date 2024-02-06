@@ -26,8 +26,6 @@ app.use('/', createViewModel)
 app.get('/',(req, res)=> {
     res.redirect('accueil')
 })
-
-
 app.get('/accueil',(req, res)=> {
     res.render('index')
 })

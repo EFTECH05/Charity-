@@ -44,7 +44,7 @@ html {
 
 body {
     color: #666666;
-    font-size: 14px;
+    font-size: 5px;
     line-height: 1.80857;
     font-weight: normal;
     overflow-x: hidden;
@@ -300,11 +300,11 @@ button.donate_btn {
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
-    height: auto;
+
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    top: -70px;
+    top: -5px;
     margin-bottom: 0;
 }
 
