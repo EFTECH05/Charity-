@@ -58,7 +58,7 @@ app.get('/news.html',(req, res)=> {
     res.render('news')
 })
 app.use((req, res) => {
-    res.status(404).send('Error of page !!')
+    res.status(404).render('404')
 })
 
 app.listen(3000, () => {
