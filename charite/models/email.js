@@ -51,7 +51,7 @@ transporter.sendMail(mailOptions2, (error, info) => {
     }
 })
 
-res.redirect('/accueil')
+res.redirect('/submit')
 
 })
 
@@ -104,7 +104,7 @@ transporter.sendMail(mailOptions2, (error, info) => {
     }
 })
 
-res.redirect('/accueil')
+res.redirect('/submit')
 
 })
 

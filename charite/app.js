@@ -34,6 +34,10 @@ app.get('/contact',(req, res) => {
     res.render('contact')
 })
 
+app.get('/submit',(req, res) => {
+    res.render('submit')
+})
+
 app.get('/form.html',(req, res)=> {
     res.render('form')
 })
